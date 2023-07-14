@@ -118,7 +118,7 @@ request body</p>
 <td>Mandatory</td>
 </tr>
 <tr>
-<td>code</td>
+<td>codee</td>
 <td>string(20)</td>
 <td>USSD code that was dialled by the user</td>
 <td>Mandatory</td>
@@ -396,7 +396,14 @@ Please select your county<br>
 <h4>Callback url</h4>
 <p>To update the callback url note the service id and add it to the request alongside the request body<br>
 URL: <a href="https://ussd-service.smsafrica.tech/callback">https://ussd-service.smsafrica.tech/callback</a><br>
-<img src="https://imgur.com/a/5aoMILX" alt="callback"><br>
+METHOD: PATCH<br>
+BODY:<pre>
+{
+    "callback": "https://trial.com",
+    "service_id": 57
+}
+</pre><br>
+
 </p>
 
 <h3>Encryption</h3>
