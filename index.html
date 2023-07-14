@@ -385,7 +385,21 @@ Please select your county<br>
 1 For Nairobi<br>
 2 For Kiambu<br></p>
 <br>
-<h4>Encryption</h4>
+<h4>Update callback url</h4>
+<p>To update your callback url you will need to get the service id first</p>
+<p><u>Get service id</u><br>
+  The service id will be required in the json body when setting the public key<br>
+  URL : <a href="https://ussd-service.smsafrica.tech/service-id">https://ussd-service.smsafrica.tech/service-id</a> <br>
+  Query param: code, specify your specific code<br>
+  <img src="https://i.imgur.com/aWoExTB.jpg" alt="Service_Id">
+  <br></p>
+<h4>Callback url</h4>
+<p>To update the callback url note the service id and add it to the request alongside the request body<br>
+URL: <a href="https://ussd-service.smsafrica.tech/callback">https://ussd-service.smsafrica.tech/callback</a><br>
+<img src="https://imgur.com/a/5aoMILX.jpg" alt="callback"><br>
+</p>
+
+<h3>Encryption</h3>
 <p><b>Encryption key specifics</b><br>
 Key type: RSA<br>
 Key size: 2048 bits<br>
